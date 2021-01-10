@@ -3,7 +3,8 @@ My algorithm &amp; problem-solving solutions
 
 <ul>
 <li> Baekjoon Online Judge (백준)
-  <br> My rank: Silver [ <a href="https://solved.ac/profile/yunjh0420">solved.ac </a> ]</li><br>
+  <br> [![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=yunjh0420)](https://solved.ac/yunjh0420) <br>
   <li> Coding test </li>
 
 </ul>
