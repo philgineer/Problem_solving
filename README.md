@@ -3,7 +3,6 @@ My algorithm &amp; problem-solving solutions
 
 <ul>
   <li> Baekjoon Online Judge (백준) </li>
-  <br>
   </ul>
   
 [![Solved.ac
