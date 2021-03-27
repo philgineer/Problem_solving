@@ -21,6 +21,12 @@ def split_square(mat, size):
         else:
             split_square(square, size//2)
 
-split_square(mat, n)
+s = sum([sum(row) for row in mat])
+if s == 0:
+    white += 1
+elif s == n ** 2:
+    blue += 1
+else:
+    split_square(mat, n)
 print(white)
 print(blue)
