@@ -1,3 +1,4 @@
 {
-    "jupyter.jupyterServerType": "local"
+    "jupyter.jupyterServerType": "local",
+    "python.pythonPath": "/Users/junyun/miniconda3/envs/boostcamp/bin/python"
 }
