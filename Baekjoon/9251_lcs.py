@@ -1,17 +1,16 @@
-s1 = input()
-s2 = input()
+import sys
+input = sys.stdin.readline
 
-common = set(s1).intersection(set(s2))
-print('common:', common)
+s1 = '_' + input().rstrip()
+s2 = '_' + input().rstrip()
+len1, len2 = len(s1), len(s2)
+dp = [[0] * len2 for _ in range(len1)]
 
-com1 = []
-com2 = []
-for s, com in zip([s1, s2], [com1, com2]):
-    for c in s:
-        if c in common:
-            com += c
+for i in range(1, len1):
+    for j in range(1, len2):
+        if s1[i] == s2[j]:
+            dp[i][j] = dp[i-1][j-1] + 1
+        else:
+            dp[i][j] = max(dp[i][j-1], dp[i-1][j])
 
-print(com1)
-print(com2)
-
-dp
+print(dp[-1][-1])
