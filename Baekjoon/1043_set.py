@@ -11,7 +11,7 @@ for _ in range(m):
     _, *people = map(int, input().split())
     for p in people:
         tree[p] |= set(people)
-    party.append(people)
+    party.append(set(people))
 
 temp = set()
 known_prev = set()
@@ -24,12 +24,7 @@ while known_prev != known:
 
 res = 0
 for pt in party:
-    flag = 0
-    for p in pt:
-        if p in known:
-            flag = 1
-            break
-    if not flag:
+    if not pt & known:
         res += 1
 
 print(res)
